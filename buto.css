@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: black !important;
+}
+
+a {
+  color: white !important;
+}
+
+.card-body {
+  background-color: #343a40;
+  color: white;
+}
+
+.pagActual {
+  color: gray !important;
+}
+
+.customDiv {
+  background-color: #343a40;
+}
+
+.footerCustom {
+  background-color: #343a40;
+  color: white;
+}
+/*# sourceMappingURL=buto.css.map */

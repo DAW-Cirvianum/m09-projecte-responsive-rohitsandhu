@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Navigation Bar</title> -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botiga</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li class="logo"> <a href="inici.html">Botiga</a></li>
+            <li class="items"><a href="#">Qui som?</a></li>
+            <li class="items"><a href="contacte.html">Contacte</a></li>
+            <li class="items"><a href="llistaArticles.html">Llista Articles</a></li>
+            <li class="btn"><a href="#"> <img src="buto.png" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <img src="iniciImg.jpeg" width="100%" height="auto"; alt="" class="responsive">
+
+
+    <div class="custom-div">
+      <h1>BOTIGA</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, vero. Tempora excepturi delectus facere corporis ut, rerum suscipit aut maxime impedit explicabo quaerat perferendis corrupti quasi dolore repellendus tempore repellat?</p>
+      <br>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam repellendus dolores omnis eius mollitia accusamus quo ipsam quisquam, earum nostrum numquam nobis cum, sequi ad iure consequuntur repellat, quae porro.</p>
+    </div>
+
+    <div class="customDiv2">
+      <button type="button" onclick="location.href='llistaArticles.html'">Veure Articles</button>
+    </div>
+
+    <footer class="footer2">
+        <div class="customDiv3">
+          <p> FOOTER CONTENT</p>
+        </div>
+        <div class="customDiv4">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <br>
+        </div>
+
+        <div class="marginDiv">
+
+        </div>
+        <hr class="hr2">
+        <div class="marginDiv2">
+
+        </div>
+      <ul>
+          <li> <p class="pCustom">LINKS</p></li>
+          <li ><a class="pagActual" href="#">Inici</a></li>
+          <li><a href="#">Qui som?</a></li>
+          <li><a href="#">Contacte</a></li>
+          <li><a href="#">Llistat Articles</a></li>
+      </ul>
+      <div class="marginDiv3">
+
+      </div>
+      <div class="customDiv5">
+          <p>© 2020 Copyright:  IliasRohit.com</p>
+      </div>
+    </footer>
+
+
+  </body>
+    <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+    </script>
+  </body>
+</html>
