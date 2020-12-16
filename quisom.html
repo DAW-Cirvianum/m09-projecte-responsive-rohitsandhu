@@ -2,134 +2,166 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qui som?</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qui som?</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="pagina">
-    <div class="main-container">
-        <div class="header">
-            <div class="logo">
-                <a href="index.html">Botiga</a>
-            </div>
-            <div id="main-nav" class="main-nav">
-                <ul>
-                    <li><a class="pagActual" href="quisom.html">Qui som?</a></li>
-                    <li><a href="contacte.html">Contacte</a></li>
-                    <li><a href="llistaArticles.html">Llista Articles</a></li>
-                </ul>
-            </div>
-            <div class="hamburger">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <img src="buto.png" class="imgButoGrid" alt="">
-                </a>
-            </div>
-        </div>
+<body class="">
+
+  <!-- <div class="main-container">
+    <div class="header">
+      <div class="logo">
+        <a href="index.html">Botiga</a>
+      </div>
+      <div id="main-nav" class="main-nav">
+        <ul>
+          <li><a class="pagActual" href="quisom.html">Qui som?</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+          <li><a href="llistaArticles.html">Llista Articles</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img src="buto.png" class="imgButoGrid" alt="">
+        </a>
+      </div>
     </div>
+  </div> -->
 
-    <div>
-        <h3 style="color: white; margin: 20px;">
-            Qui som?
-        </h3>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarCustom">
+    <a class="navbar-brand " href="index.html">Botiga</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link pagActual" href="quisom.html">Qui som? </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contacte.html">Contacte </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " href="llistaArticles.html">Llistat Articles</a>
+        </li>
+      </ul>
     </div>
+</nav>
+
+  <div class="sidenav">
+    <a href="index.html"> Botiga</a>
+    <a class="pagActual" href="quisom.html">Qui som?</a>
+    <a href="contacte.html">Contacte</a>
+    <a href="llistaArticles.html">Llista articles</a>
+  </div>
+
+  <div class="prova">
+    <h3 style="color: white; margin: 20px;">
+      Qui som?
+    </h3>
+  </div>
 
 
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-lg-6">
-                <div class="card" style="width: 100%; margin-top: 5%; margin-bottom: 5%; ">
-                    <img class="card-img-top responsive"  src="img1.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h6>Rohit</h6>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="card" style="width: 100%; margin-top: 5%; margin-bottom: 5%;  ">
-                    <img class="card-img-top responsive" src="img3.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h6>Ililas</h6>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <footer class="page-footer font-small pt-4 footerCustom">
-
-        <div class="container-fluid text-center text-md-left">
-      
-          <div class="row">
-      
-            <div class="col-md-6 mt-md-0 mt-3">
-      
-              <h5 class="text-uppercase">Footer Content</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-      
-            </div>
-      
-            <hr class="clearfix w-100 d-md-none pb-3">
-      
-            <div class="col-md-3 mb-md-0 mb-3">
-      
-            </div>
-      
-            <div class="col-md-3 mb-md-0 mb-3">
-      
-              <h5 class="text-uppercase">Links</h5>
-      
-              <ul class="list-unstyled">
-                <li>
-                  <a href="index.html">Inici</a>
-                </li>
-                <li>
-                  <a class="pagActual" href="quisom.html">Qui som?</a>
-                </li>
-                <li>
-                  <a href="contacte.html">Contactans</a>
-                </li>
-                <li>
-                  <a href="llistaArticles.html" >Llistat Articles</a>
-                </li>
-              </ul>
-      
-            </div>
-      
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card" style="width: 100%; margin-top: 5%; margin-bottom: 5%; ">
+          <img class="card-img-top responsive" src="img1.png" alt="Card image cap">
+          <div class="card-body">
+            <h6>Rohit</h6>
+            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.</p>
           </div>
-      
         </div>
-      
-      
-      
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="#"> IliasRohit.com</a>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card" style="width: 100%; margin-top: 5%; margin-bottom: 5%;  ">
+          <img class="card-img-top responsive" src="img1.png" alt="Card image cap">
+          <div class="card-body">
+            <h6>Ililas</h6>
+            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="page-footer font-small pt-4 footerCustom">
+
+    <div class="container-fluid text-center text-md-left">
+
+      <div class="row">
+
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.</p>
+
         </div>
 
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <div class="col-md-3 mb-md-0 mb-3">
+
+        </div>
+
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html">Inici</a>
+            </li>
+            <li>
+              <a class="pagActual" href="quisom.html">Qui som?</a>
+            </li>
+            <li>
+              <a href="contacte.html">Contactans</a>
+            </li>
+            <li>
+              <a href="llistaArticles.html">Llistat Articles</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
 
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("main-nav");
-            if (x.style.display === "grid") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "grid";
-            }
-        } 
-    </script>
+
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> IliasRohit.com</a>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
 
 </body>
 

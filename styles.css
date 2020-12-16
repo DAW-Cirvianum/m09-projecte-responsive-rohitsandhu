@@ -27,6 +27,33 @@ a {
   color: white;
 }
 
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (min-width: 1450px) {
+  nav {
+    display: none !important;
+  }
+  .prova {
+    margin-left: 11%;
+  }
+  .main-container {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .sidenav {
+    display: none;
+  }
+  .prova {
+    margin-left: 3%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -434,5 +461,46 @@ li {
   background: #343a40;
   color: white;
   padding: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .footerCustom2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

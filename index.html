@@ -9,34 +9,72 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botiga</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav>
+    <!-- <nav>
         <ul>
-            <li class="logo"> <a  href="index.html">Botiga</a></li>
+            <li class="logo"> <a href="index.html" class="pagActual">Botiga</a></li>
             <li class="items"><a href="quisom.html">Qui som?</a></li>
             <li class="items"><a href="contacte.html">Contacte</a></li>
             <li class="items"><a href="llistaArticles.html">Llista Articles</a></li>
             <li class="btn"><a href="#"> <img src="buto.png" alt=""></a></li>
         </ul>
-    </nav>
+    </nav> -->
 
-    <img src="iniciImg.jpeg" width="100%" height="auto"; alt="" class="responsive">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarCustom">
+      <a class="navbar-brand pagActual" href="index.html">Botiga</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="quisom.html">Qui som? </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contacte.html">Contacte </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="llistaArticles.html">Llistat Articles</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
 
-
-    <div class="custom-div">
-      <h1>BOTIGA</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, vero. Tempora excepturi delectus facere corporis ut, rerum suscipit aut maxime impedit explicabo quaerat perferendis corrupti quasi dolore repellendus tempore repellat?</p>
-      <br>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam repellendus dolores omnis eius mollitia accusamus quo ipsam quisquam, earum nostrum numquam nobis cum, sequi ad iure consequuntur repellat, quae porro.</p>
+    <div class="sidenav">
+      <a class="pagActual" href="index.html"> Botiga</a>
+      <a href="quisom.html">Qui som?</a>
+      <a href="contacte.html">Contacte</a>
+      <a href="llistaArticles.html">Llista articles</a>
     </div>
 
-    <div class="customDiv2">
-      <button type="button" onclick="location.href='llistaArticles.html'">Veure Articles</button>
+
+    <img src="https://cdn.mos.cms.futurecdn.net/A4GDK27VMnz6LtFDy9yzk.jpg" width="100%" height="auto"; alt="" class="responsive">
+
+    <div class="prova">
+      <div class="custom-div">
+        <h1>BOTIGA</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, vero. Tempora excepturi delectus facere corporis ut, rerum suscipit aut maxime impedit explicabo quaerat perferendis corrupti quasi dolore repellendus tempore repellat?</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam repellendus dolores omnis eius mollitia accusamus quo ipsam quisquam, earum nostrum numquam nobis cum, sequi ad iure consequuntur repellat, quae porro.</p>
+      </div>
+  
+      <div class="customDiv2">
+        <button type="button" onclick="location.href='llistaArticles.html'">Veure Articles</button>
+      </div>
+
     </div>
 
-    <footer class="footer2">
+
+    <!-- <footer class="footer2">
         <div class="customDiv3">
           <p> FOOTER CONTENT</p>
         </div>
@@ -65,17 +103,61 @@
       <div class="customDiv5">
           <p>© 2020 Copyright:  IliasRohit.com</p>
       </div>
-    </footer>
+    </footer> -->
+    <footer class="page-footer font-small pt-4 footerCustom mt-5">
+      <div class="container-fluid text-center text-md-left">
+    
+        <div class="row">
+    
+          <div class="col-md-6 mt-md-0 mt-3">
+    
+            <h5 class="text-uppercase">Footer Content</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    
+          </div>
+    
+          <hr class="clearfix w-100 d-md-none pb-3">
+    
+          <div class="col-md-3 mb-md-0 mb-3">
+    
+          </div>
+    
+          <div class="col-md-3 mb-md-0 mb-3">
+    
+            <h5 class="text-uppercase">Links</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="pagActual">Inici</a>
+              </li>
+              <li>
+                <a href="quisom.html">Qui som?</a>
+              </li>
+              <li>
+                <a href="contacte.html">Contactans</a>
+              </li>
+              <li>
+                <a href="llistaArticles.html" >Llistat Articles</a>
+              </li>
+            </ul>
+    
+          </div>
+    
+        </div>
+    
+      </div>
 
-
-  </body>
-    <script>
-      $(document).ready(function(){
-        $('.btn').click(function(){
+    <!-- <script>
+      $(document).ready(function() {
+        $('.btn').click(function() {
           $('.items').toggleClass("show");
           $('ul li').toggleClass("hide");
         });
       });
-    </script>
+    </script> -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
   </body>
 </html>

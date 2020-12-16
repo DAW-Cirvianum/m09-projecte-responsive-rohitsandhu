@@ -26,57 +26,56 @@ body {
     color: white;
   }
   
-//   .sidebar {
-//     margin: 0;
-//     padding: 0;
-//     width: 12%;
-//     background-color: #262525;
-//     position: fixed;
-//     height: 100%;
-//     overflow: auto;
   
-//     a {
-//       display: block;
-//       color: white;
-//       padding: 3%;
-//       text-decoration: none;
   
-//       &.active {
-//         background-color: white;
-//         color: black;
-//       }
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
   
-//       &:hover:not(.active) {
-//         background-color: rgb(92, 90, 90);
-//         color: white;
-//       }
-//     }
-//   }
+  @media screen and (min-width: 1450px) {
+    // .sidebar {
+    //   width: 100%;
+    //   height: auto;
+    //   position: relative;
+    //   background-color: #343a40!important;
   
-//   div.content {
-//     margin-left: 200px;
-//     padding: 1px 16px;
-//     height: 1000px;
-//   }
+    //   a {
+    //     float: left;
+    //   }
+    // }
   
-  // @media screen and (max-width: 992px) {
-  //   .sidebar {
-  //     width: 100%;
-  //     height: auto;
-  //     position: relative;
-  
-  //     a {
-  //       float: left;
-  //     }
-  //   }
-  
-  //   div.content {
-  //     margin-left: 0;
-  //   }
-  // }
+    // div.content {
+    //   margin-left: 0;
+    // }
+
+    nav{
+      display: none!important;
+    }
+    .prova{
+      margin-left: 11%;
+    }
+    .main-container{
+      display: none!important;
+    }
+
+  }
+
+    
+  @media screen and (max-width: 1450px) {
+    .sidenav{
+      display: none;
+    }
+    
+    .prova{
+      margin-left: 3%; 
+    }
+  }
   
   // @media screen and (max-width: 500px) {
   //   .sidebar a {
+  //     background-color: #343a40;
   //     text-align: center;
   //     float: none;
   //   }
@@ -459,4 +458,64 @@ li {
   background: #343a40;
   color: white;
   padding: 20px;
+}
+
+
+.sidenav {
+  height: 100%;
+  width:10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+
+    &:hover {
+      color: #f1f1f1;
+    }
+  }
+}
+
+.main {
+  margin-left: 160px;
+
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+// @media screen and (max-height: 450px) {
+//   .sidenav {
+//     padding-top: 15px;
+
+//     a {
+//       font-size: 18px;
+//     }
+//   }
+// }
+
+
+
+
+
+// 767
+
+@media screen and (min-width: 767px) {
+  .footerCustom2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+  }
 }

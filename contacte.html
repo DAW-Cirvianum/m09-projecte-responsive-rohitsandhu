@@ -1,117 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Contacte</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contacte</title>
 </head>
+
 <body>
 
-        
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 navbarCustom">
-        <a class="navbar-brand" href="index.html">Botiga</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <!-- <a class="nav-link" href="#">Inici <span class="sr-only">(current)</span></a> -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 navbarCustom">
+    <a class="navbar-brand" href="index.html">Botiga</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!-- <a class="nav-link" href="#">Inici <span class="sr-only">(current)</span></a> -->
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="quisom.html">Qui som? </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link pagActual" href="contacte.html">Contacte </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="llistaArticles.html">Llistat Articles</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="sidenav">
+    <a href="index.html"> Botiga</a>
+    <a class="pagActual" href="quisom.html">Qui som?</a>
+    <a href="contacte.html">Contacte</a>
+    <a href="llistaArticles.html">Llista articles</a>
+  </div>
+
+  <div class="container border text-light form customDiv p-3 mt-5 mb-5">
+    <form>
+      <div>
+        <h4 class="mb-3">
+          Contactans
+        </h4>
+      </div>
+      <div class="form-group mt-2">
+        <label for="exampleFormControlInput1">El teu correu electronic:</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@gmail.com">
+      </div>
+      <div class="form-group mt-2">
+        <label for="exampleFormControlTextarea1">Comentari:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+      </div>
+    </form>
+  </div>
+
+
+  <footer class="page-footer font-small pt-4 footerCustom mt-5 footerCustom2">
+
+    <div class="container-fluid text-center text-md-left">
+
+      <div class="row">
+
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.</p>
+
+        </div>
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <div class="col-md-3 mb-md-0 mb-3">
+
+        </div>
+
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html">Inici</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="quisom.html">Qui som? </a>
+            <li>
+              <a href="quisom.html">Qui som?</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link pagActual" href="contacte.html">Contacte </a>
+            <li>
+              <a href="contacte.html" class="pagActual">Contacte</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="llistaArticles.html">Llistat Articles</a>
+            <li>
+              <a href="llistaArticles.html">Llistat Articles</a>
             </li>
           </ul>
+
         </div>
-      </nav>
-    
-    <div class="container border text-light form customDiv p-3 mb-5">
-        <form>
-            <div>
-                <h4 class="mb-3">
-                    Contactans
-                </h4>
-            </div>
-            <div class="form-group mt-2">
-            <label for="exampleFormControlInput1">El teu correu electronic:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@gmail.com">
-            </div>
-            <div class="form-group mt-2">
-            <label for="exampleFormControlTextarea1">Comentari:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-            </div>
-        </form>
+
+      </div>
+
     </div>
 
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> IliasRohit.com</a>
+    </div>
+  </footer>
 
-    <footer class="page-footer font-small pt-4 footerCustom mt-5">
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-        <div class="container-fluid text-center text-md-left">
-      
-          <div class="row">
-      
-            <div class="col-md-6 mt-md-0 mt-3">
-      
-              <h5 class="text-uppercase">Footer Content</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-      
-            </div>
-      
-            <hr class="clearfix w-100 d-md-none pb-3">
-      
-            <div class="col-md-3 mb-md-0 mb-3">
-      
-            </div>
-      
-            <div class="col-md-3 mb-md-0 mb-3">
-      
-              <h5 class="text-uppercase">Links</h5>
-      
-              <ul class="list-unstyled">
-                <li>
-                  <a href="index.html">Inici</a>
-                </li>
-                <li>
-                  <a href="quisom.html">Qui som?</a>
-                </li>
-                <li>
-                  <a href="contacte.html" class="pagActual">Contacte</a>
-                </li>
-                <li>
-                  <a href="llistaArticles.html" >Llistat Articles</a>
-                </li>
-              </ul>
-      
-            </div>
-      
-          </div>
-      
-        </div>
-      
-      
-      
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="#"> IliasRohit.com</a>
-        </div>
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
 </body>
+
 </html>
